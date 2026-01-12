@@ -1,4 +1,4 @@
-<div align="right">
+<div align="left">
   <a href="README_CN.md">中文</a> | <strong>English</strong>
 </div>
 
@@ -93,6 +93,14 @@ After installation, you can run the application using the `claude-code-history` 
 
 4. Stop the server:
    - Press `Ctrl+C` in the terminal
+
+
+## Snapshot
+<div align="center">
+  <img src="avatar.jpeg" alt="Claude Code History Viewer" width="300"/>
+</div>
+
+
 
 ## Project Structure
 

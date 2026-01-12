@@ -1,4 +1,4 @@
-<div align="right">
+<div align="left">
   <strong>中文</strong> | <a href="README.md">English</a>
 </div>
 
@@ -93,6 +93,13 @@ pip install git+https://github.com/chenwei-zhang/claude-code-history.git
 
 4. 停止服务器：
    - 在终端按 `Ctrl+C`
+
+
+## 界面快照
+<div align="center">
+  <img src="avatar.jpeg" alt="Claude Code History Viewer" width="300"/>
+</div>
+
 
 ## 项目结构
 
