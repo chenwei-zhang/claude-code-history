@@ -1,0 +1,6 @@
+# Python 3.6+ required
+# This project uses only Python standard library, no external dependencies required.
+
+# Python 3.6+ 必需
+# 本项目仅使用 Python 标准库，无需外部依赖。
+
