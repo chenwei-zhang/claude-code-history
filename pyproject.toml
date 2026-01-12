@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-code-history"
+version = "0.1.0"
+description = "A simple web application to view conversation history from Claude Code"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "chenwei-zhang", email = "chwzhan@gmail.com"}
+]
+keywords = ["claude", "code", "history", "viewer", "conversation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+]
+
+[project.scripts]
+claude-code-history = "claude_code_history.app:main"
+
+[project.urls]
+Homepage = "https://github.com/chenwei-zhang/claude-code-history"
+Repository = "https://github.com/chenwei-zhang/claude-code-history"
+Issues = "https://github.com/chenwei-zhang/claude-code-history/issues"
+
+[tool.setuptools]
+packages = ["claude_code_history"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md"]

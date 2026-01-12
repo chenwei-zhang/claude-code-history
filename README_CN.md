@@ -21,36 +21,64 @@
 
 ## 安装步骤
 
+### 使用 pip 安装（推荐）
+
+最简单的方式是使用 pip 安装：
+
+```bash
+pip install claude-code-history
+```
+
+或从源码安装：
+
+```bash
+pip install git+https://github.com/chenwei-zhang/claude-code-history.git
+```
+
+### 从源码安装
+
 1. 克隆或下载此项目：
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/chenwei-zhang/claude-code-history.git
    cd claude-code-history
    ```
 
-2. 确保已安装 Python 3.6+：
+2. 安装包：
+   ```bash
+   pip install .
+   ```
+
+3. 确保已安装 Python 3.6+：
    ```bash
    python3 --version
    ```
 
-3. 项目使用 Python 标准库，无需安装额外依赖
+项目使用 Python 标准库，无需安装额外依赖。
 
 ## 使用方法
+
+安装后，可以使用 `claude-code-history` 命令运行应用：
 
 1. 运行应用：
    
    使用默认端口 8000：
    ```bash
-   python3 app.py
+   claude-code-history
    ```
    
    或指定自定义端口：
    ```bash
-   python3 app.py --port 8080
+   claude-code-history --port 8080
    ```
    
    也可以使用简写形式：
    ```bash
-   python3 app.py -p 8080
+   claude-code-history -p 8080
+   ```
+
+   如果从源码安装但未使用 pip，仍可以运行：
+   ```bash
+   python3 app.py
    ```
 
 2. 打开浏览器访问：
@@ -70,10 +98,14 @@
 
 ```
 claude-code-history/
-├── app.py              # 主程序
-├── README.md           # 使用说明（英文）
-├── README_CN.md        # 使用说明（中文）
-└── requirements.txt    # 依赖文件
+├── claude_code_history/  # 包目录
+│   ├── __init__.py      # 包初始化文件
+│   └── app.py           # 主程序
+├── app.py               # 旧版入口点（向后兼容）
+├── pyproject.toml       # 包配置文件
+├── README.md            # 使用说明（英文）
+├── README_CN.md         # 使用说明（中文）
+└── requirements.txt     # 依赖文件
 ```
 
 ## 工作原理

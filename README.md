@@ -21,36 +21,64 @@ A simple web application to view conversation history from Claude Code.
 
 ## Installation
 
+### Install via pip (Recommended)
+
+The easiest way to install is using pip:
+
+```bash
+pip install claude-code-history
+```
+
+Or install from source:
+
+```bash
+pip install git+https://github.com/chenwei-zhang/claude-code-history.git
+```
+
+### Install from source
+
 1. Clone or download this project:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/chenwei-zhang/claude-code-history.git
    cd claude-code-history
    ```
 
-2. Ensure Python 3.6+ is installed:
+2. Install the package:
+   ```bash
+   pip install .
+   ```
+
+3. Ensure Python 3.6+ is installed:
    ```bash
    python3 --version
    ```
 
-3. The project uses Python standard library, no additional dependencies required
+The project uses Python standard library, no additional dependencies required.
 
 ## Usage
+
+After installation, you can run the application using the `claude-code-history` command:
 
 1. Run the application:
    
    Use default port 8000:
    ```bash
-   python3 app.py
+   claude-code-history
    ```
    
    Or specify a custom port:
    ```bash
-   python3 app.py --port 8080
+   claude-code-history --port 8080
    ```
    
    Or use the short form:
    ```bash
-   python3 app.py -p 8080
+   claude-code-history -p 8080
+   ```
+
+   If you installed from source without pip, you can still run:
+   ```bash
+   python3 app.py
    ```
 
 2. Open your browser and visit:
@@ -70,10 +98,14 @@ A simple web application to view conversation history from Claude Code.
 
 ```
 claude-code-history/
-├── app.py              # Main application
-├── README.md           # Documentation (English)
-├── README_CN.md        # Documentation (Chinese)
-└── requirements.txt    # Dependencies
+├── claude_code_history/  # Package directory
+│   ├── __init__.py      # Package initialization
+│   └── app.py           # Main application
+├── app.py               # Legacy entry point (for backward compatibility)
+├── pyproject.toml       # Package configuration
+├── README.md            # Documentation (English)
+├── README_CN.md         # Documentation (Chinese)
+└── requirements.txt     # Dependencies
 ```
 
 ## How It Works
